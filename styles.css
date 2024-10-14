@@ -1,0 +1,64 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://i.pinimg.com/236x/eb/cf/fb/ebcffba4f0fc195f0d2c9e114bddb6a3.jpg");
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4A90E2; 
+}
+
+/* Estilo de la sección */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+section button img {
+    width: 60px;
+}
+/* Estilo de los botones */
+button {
+    padding: 15px 25px;
+    background: #75a;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    cursor: pointer;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #357ABD; 
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(0); 
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
